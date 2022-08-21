@@ -1,9 +1,8 @@
 package cclu.unittestdemo.core
 
 interface LoginRepository {
-//    fun auth(name: String, password: String): Boolean
-
-    fun auth(name: String, password: String, callback: LoginCallback)
+    
+    fun login(name: String, password: String, callback: LoginCallback)
 }
 
 interface LoginCallback {

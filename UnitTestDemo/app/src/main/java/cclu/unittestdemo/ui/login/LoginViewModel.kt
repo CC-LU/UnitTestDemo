@@ -8,7 +8,7 @@ class LoginViewModel(private val repository: LoginRepository) {
     var result: String? = null
 
     fun login(name: String, password: String) {
-        repository.auth(name, password, object : LoginCallback {
+        repository.login(name, password, object : LoginCallback {
             override fun success() {
                 result = "成功"
             }
